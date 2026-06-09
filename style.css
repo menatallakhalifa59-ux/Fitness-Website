@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgb(26, 26, 46), rgb(46, 32, 26));
+    
+}
+
+.navbar {
+    background-color: #1a1a2e;
+}
+
+.navbar div button i {
+    font-size: 33px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.navbar div button i:hover {
+    color: #e55a2b;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+
+.navbar-brand {
+    color: #fff;
+    font-size: 32px;
+    font-family: "Knewave", system-ui;
+}
+
+.navbar-brand span {
+    color: #ff6b35;
+}
+
+.brand-text {
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #ff6b35;
+}
+
+.activee {
+    color: #ff6b35;
+}
+
+
+/************************ Hero Section *************************/
+
+.hero-section {
+    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(46, 32, 26, 0.9)), url(images/man-training-with-dumbbells-smoke.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0 5rem;
+    overflow: hidden;
+}
+
+.hero-section div {
+    margin-top: 40px;
+}
+
+.hero-section div div h1 {
+    font-size: 55px;
+    color: #ffffff;
+    font-family: "Knewave", system-ui;
+}
+
+.hero-section div div h1 span {
+    color: #e55a2b;
+}
+
+.hero-section div div p {
+    color: #efefef;
+}
+
+.hero-section div div button {
+    border: none;
+    background-color: #e55a2b;
+    padding: 15px 30px;
+    transition: 0.2s;
+}
+
+.hero-section div div button:hover {
+    background-color: #ff6b35;
+    transform: translateY(-3px);
+}
+
+.hero-section div div button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero-section div img {
+    margin-bottom: -120px;
+    margin-right: -60px;
+    transition: 0.3s;
+}
+
+/*************************** gym-statistics ****************************/
+
+.gym-statistics div {
+    border-right: 3px solid #e55a2b;
+}
+
+.gym-statistics span {
+    color: #e55a2b;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.gym-statistics h6 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.gym-statistics p {
+    color: #ffffff8b;
+    font-size: 12px;
+}
+
+/*************************** About ****************************/
+
+.about {
+    margin: 130px 0 80px;
+}
+
+.about h4 {
+    color: #fff;
+    font-family: "Knewave", system-ui;
+}
+
+.about p {
+    color: #ffffff9e;
+}
+
+.about i {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #e55a2b;
+    border: 3px solid #e55a2b;
+    transition: 0.2s;
+}
+
+.about i:hover {
+    color: #e55a2b;
+    transform: translateY(-4px);
+    background: transparent;
+}
+
+.cta-section {
+    background-color: #e55a2b;
+    margin-top: 35px;
+}
+
+.cta-section h4 {
+    color: #1a1a2e;
+}
+
+.cta-section p {
+    color: #1a1a2eb2;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: #1a1a2e;
+    color: #e55a2b;
+    transition: 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+}
+
+.about img {
+    transition: 0.3s;
+}
+
+.about img:hover {
+    transform: translateY(-10px);
+}
+
+/********************** services **********************/
+
+.services {
+    padding-bottom: 3rem;
+    display:flex; flex-direction:column;
+    align-items:center; gap:1rem;
+}
+
+.services .top {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.slider-btn {
+    background: transparent;
+    border: none;
+    color: #e55a2b;
+    transition: 0.2s;
+}
+
+.slider-btn:hover {
+    color: #ff6b35;
+}
+
+.slider {
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.slide {
+    flex:0 0 auto;
+    transition: transform 300ms ease, opacity 300ms ease, box-shadow 300ms ease;
+    opacity:0.55;
+    transform: scale(0.98);
+}
+
+.slide.active {
+    opacity:1;
+    transform: scale(1);
+    box-shadow: 0 8px 24px rgba(17,17,17,0.08);
+}
+
+.card-1 {
+    background: linear-gradient(#e55a2b88), url(images/pexels-brunogobofoto-2204196.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-2 {
+    background: linear-gradient(#e55a2b88), url(images/people-working-out-indoors-together-with-dumbbells.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-3 {
+    background: linear-gradient(#e55a2b88), url(images/flat-lay-clipboard-vegetables.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-4 {
+    background: linear-gradient(#e55a2b88), url(images/3d-gym-equipment.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-5 {
+    background: linear-gradient(#e55a2b88), url(images/fit-online.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide h4 {
+    color: #1a1a2e;
+    font-family: "Knewave", system-ui;
+}
+
+.slide p {
+    color: #1a1a2ef1;
+}
+
+.slide a {
+    text-decoration: none;
+    background-color: #1a1a2e;
+    color: #e55a2b;
+    transition: 0.2s;
+}
+
+.slide a:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+}
+
+/********************** plans **********************/
+
+.our-plans-title {
+    margin-bottom: -33px;
+}
+
+.plan {
+    border: 3px solid #e55a2b;
+    transition: 0.3s;
+}
+
+.plan span {
+    color: #e55a2b;
+}
+
+.plan p,.plan li {
+    color: #fff;
+}
+
+.plan button {
+    color: #fff;
+    background-color: #e55a2b;
+    transition: 0.2s;
+}
+
+.plan button:hover {
+    transform: translateY(-3px);
+    background-color: #ff6b35;
+}
+
+.plan .plan-price {
+    color: #bebebea8;
+}
+
+.plan .plan-price span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.plan-custom {
+    background-color: #e55a2b;
+    transform: scale(1.1);
+}
+
+.plan-custom span {
+    color: #1a1a2e;
+}
+
+.plan-custom button {
+    color: #e55a2b;
+    background-color: #1a1a2e;
+    transition: 0.2s;
+}
+
+.plan-custom button:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+}
+
+/********************** Trainers **********************/
+
+.trainers {
+    margin-top: 130px;
+}
+
+.trainers-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.trainers-container .cards {
+    background-color: #e55a2b;
+    transition: 0.2s;
+}
+
+.trainers-container .cards:hover {
+    transform: translateY(-10px);
+}
+
+.trainers-container div h4 {
+    color: #1a1a2e;
+    font-family: "Knewave", system-ui;
+}
+.trainers-container div p {
+    color: #1a1a2eb2;
+}
+.trainers-container div a {
+    color: #e55a2b;
+    background-color: #1a1a2e;
+    transition: 0.2s;
+}
+
+.trainers-container div a:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+    color: #e55a2b;
+}
+
+
+
+    @media (max-width: 992px){
+        .trainers-container {
+            flex-wrap: wrap;
+        }
+
+    }
+
+/********************** Schedule Section **********************/
+
+.schedule-section h2 {
+    margin-bottom: 35px;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #e55a2b;
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+
+}
+
+.table tbody td {
+    background-color: #1a1a2ec0;
+    color: #ffffff;
+    border-color: #e55a2b;
+    padding: 20px;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 107, 53, 0.1);
+}
+
+/********************** FAQ **********************/
+
+.faq {
+    margin-bottom: 80px;
+}
+
+.faq-title {
+    color: #e55a2b;
+    font-family: "Knewave", system-ui;
+}
+
+.faq-button {
+    font-family: sans-serif;
+    background-color: #e55a2b;
+    color: #fff;
+    font-weight: bold;
+}
+
+.faq-collapse {
+    background-color: #1a1a2e;
+}
+
+.faq-collapse div {
+    color: #fff;
+}
+
+/*************************** Footer ****************************/
+
+.footer {
+    background-color: #1a1a2e;
+    color: #f8f9fa;
+}
+
+.footer-brand {
+    font-size: 2rem;
+    font-family: "Knewave", system-ui;
+    color: #fff;
+}
+
+.footer-brand span {
+    color: #e55a2b;
+}
+
+.footer-title {
+    color: #e55a2b;
+    font-family: "Knewave", system-ui;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #e55a2b;
+    padding-left: 5px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #e55a2b;
+    border: 3px solid #e55a2b;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.social-icon:hover {
+    color: #e55a2b;
+    background: transparent;
+    transform: translateY(-3px);
+}
+
+.newsletter-form .form-control {
+    border-radius: 50px 0 0 50px;
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.footer-email {
+    border-radius: 50px 0 0 50px;
+    border: none;
+    padding: 0.80rem 1.5rem;
+    outline: none;
+}
+
+.footer-subscribe {
+    background-color: #e55a2b;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    padding: 0.80rem 1.5rem;
+    transition: 0.2s;
+}
+
+.footer-subscribe:hover {
+    background-color: #ff6b35;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 50px 50px 0;
+}
+
+
+/* *********************  Contact  ********************* */
+
+.sign-up {
+    margin-block: 150px 100px;
+}
+
+.sign-up form {
+    background-color: #e55a2b;
+}
+
+.sign-up form .form-1 label,.sign-up form .form-2 label {
+    color: #1a1a2e;
+    margin-bottom: 13px;
+    font-family: "Knewave", system-ui;
+}
+
+.sign-up form .form-1 input,.sign-up form select {
+    outline: none;
+    color: #1a1a2e;
+    background: transparent;
+    border: 2px solid #1a1a2e;
+    margin-bottom: 25px;
+    transition: 0.2s;
+}
+
+.sign-up form .form-1 input:focus,.sign-up form select:focus {
+    box-shadow: 0 0 15px #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.sign-up label {
+    color: #1a1a2e;
+    margin-bottom: 13px;
+    font-family: "Knewave", system-ui;
+}
+
+.checkbox {
+    background-color: #1a1a2e;
+    margin-bottom: 25px;
+}
+
+.checkbox div {
+    margin-bottom: 13px;
+}
+
+.checkbox label {
+    color: #e55a2b;
+}
+
+.checkbox input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: #e55a2b;
+    cursor: pointer;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.form-3 textarea {
+    height: 130px;
+    outline: none;
+    color: #1a1a2e;
+    background: transparent;
+    border: 2px solid #1a1a2e;
+    transition: 0.2s;
+}
+
+.form-3 textarea::placeholder {
+    color: #1a1a2ec6;
+}
+
+.form-3 textarea:focus {
+    box-shadow: 0 0 15px #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.form-4 input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: #1a1a2e;
+    cursor: pointer;
+}
+
+.form-4 input {
+    margin-right: 10px;
+}
+
+.form-4 label {
+    color: #1a1a2e;
+    margin-bottom: 13px;
+    font-family: "Knewave", system-ui;
+}
+
+.form-5 button {
+    color: #e55a2b;
+    background-color: #1a1a2e;
+    transition: 0.2s;
+}
+
+.form-5 button:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+}
+
+/* ***************************************** */
+
+.location h4 {
+    color: #fff;
+}
+
+.location h4 span,.location h4 i {
+    color: #e55a2b;
+}
+
+.location div div div {
+    background-color: #1a1a2e;
+}
+
+.location div div div i {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #e55a2b;
+    border: 3px solid #e55a2b;
+    transition: 0.2s;
+}
+
+.location div div div i:hover {
+    color: #e55a2b;
+    transform: translateY(-4px);
+    background: transparent;
+}
+
+.location div div div p {
+    color: #ffffff9e;
+}
+
+.get-in-touch {
+    transition: 0.3s;
+}
+
+.get-in-touch:hover {
+    transform: translateX(10px);
+}
+
+.map iframe {
+    height: 17rem;
+}
+
+.opening-hours {
+    background-color: #1a1a2e;
+}
+
+.opening-hours .opening-hours-container,.opening-hours .opening-hours-container div {
+    background-color: #e55a2b;
+    transition: 0.2s;
+}
+
+.opening-hours .opening-hours-container p {
+    color: #fff;
+}
+
+/* ***************************************** */
+
+.form-6 {
+    margin-block: 100px;
+}
+
+.form-6 form {
+    background-color: #e55a2b;
+}
+
+.form-6 form input {
+    outline: none;
+    color: #1a1a2e;
+    background: transparent;
+    border: 2px solid #1a1a2e;
+    margin-bottom: 25px;
+    transition: 0.2s;
+}
+
+.form-6 form input::placeholder {
+    color: #1a1a2ec6;
+}
+
+.form-6 form input:focus {
+    box-shadow: 0 0 15px #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.form-6 textarea {
+    height: 130px;
+    outline: none;
+    color: #1a1a2e;
+    background: transparent;
+    border: 2px solid #1a1a2e;
+    transition: 0.2s;
+}
+
+.form-6 textarea::placeholder {
+    color: #1a1a2ec6;
+}
+
+.form-6 textarea:focus {
+    box-shadow: 0 0 15px #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.form-6 form button {
+    color: #e55a2b;
+    background-color: #1a1a2e;
+    transition: 0.2s;
+}
+
+.form-6 form button:hover {
+    transform: translateY(-3px);
+    background-color: #202036;
+}
+
+h1,h2,h4 {
+    font-family: "Knewave", system-ui;
+}
+
+h2 {
+     color: #fff;
+}
+
+h2 span {
+    color: #e55a2b;
+}
+
+.our-plans-p,.trainers .trainers-p {
+    color: #ffffffc3;
+}
