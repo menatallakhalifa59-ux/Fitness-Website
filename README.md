@@ -1,10 +1,10 @@
-# 🛍️ Project Name: [Fitness-Website]
+# Project Name: [Fitness-Website]
 
 A responsive web application crafted with care, featuring a clean and cute user interface. Fully optimized for all screen sizes.
 
-## 🚀 Live Demo
-🔗 [حطي هنا رابط الموقع الشغال عشان العميل يشوفه بنفسه]
+## Live Demo
+[https://menatallakhalifa59-ux.github.io/Fitness-Website/]
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Design Aesthetic:** Cute, pastel, and student-friendly layouts.
